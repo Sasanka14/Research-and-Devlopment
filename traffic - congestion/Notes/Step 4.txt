@@ -1,0 +1,4 @@
+mAP -
+mAP is short for mean Average Precision which is a metric used for evaluating Objects detection models.in other words , it defines how well your object detection model can find and determine objects.This metric uses Recall and Precision in different thresholds to calculate this metric. 
+       A number of components of mAP is defined below:
+          ->

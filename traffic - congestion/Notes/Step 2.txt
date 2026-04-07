@@ -1,0 +1,15 @@
+YOLO FAMILY HISTORY -
+It is a real-time object detection model that detects objects in a single pass through the model, making it very fast. YOLO is well-known for its speed and efficiency. It works as a single regression problem: the model divides an image into grids, and each grid makes predictions about bounding boxes, object class probabilities, and confidence scores. Since its inception, YOLO has seen multiple versions, each aiming to improve upon the previous one. 
+          Below is a brief history of the YOLO family of models: 
+               -> YOLOv1 (2016)
+               -> YOLOv2 (2017)
+               -> YOLOv3 (2018)
+               -> YOLOv4 (2020)
+               -> YOLOv5 (2020)
+               -> YOLOv6 (2020)
+               -> YOLOv7 (2022)
+               -> YOLOv8 (2023)
+               -> YOLOv9 (2024)
+               -> YOLOv10 (2024)
+               -> YOLOv11 (2024)
+

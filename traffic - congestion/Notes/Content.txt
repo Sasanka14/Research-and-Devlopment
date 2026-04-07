@@ -1,0 +1,47 @@
+Table of Contents – YOLO Project Workflow
+
+Step 1 | Description
+
+Step 2 | YOLO Family History
+
+Step 3 | Achievements in YOLO11 (I hate history... Read YourSelf.........)
+
+Step 4 | mAP
+
+Step 5 | Installing Ultralytics
+
+Step 6 | Importing Libraries
+
+Step 7 | Loading Datasets
+
+Step 8 | YOLOv11 Models
+
+Step 9 | IOU and NMS
+
+Step 10 | Prediction Before Training
+
+Step 11 | Train and Validation Images
+
+Step 12 | Prediction on Train Images Before Training
+
+Step 13 | YAML Configuration
+
+Step 14 | YOLO Hyperparameters for Training
+
+Step 15 | Training the Model
+
+Step 16 | Model Results
+
+Step 17 | Loading the Trained Model
+
+Step 18 | Prediction Using Trained Model
+
+Step 19 | Tracking
+
+Step 20 | Tracking Models
+
+Step 21 | Object Tracking Metrics
+
+Step 22 | Results
+
+Step 23 | ONNX Export

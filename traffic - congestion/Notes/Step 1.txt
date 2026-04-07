@@ -1,0 +1,17 @@
+INTRODUCTION -
+
+In this notebook, I will explore the different YOLO models and specifically train the YOLO11 model using a custom dataset tailored for this purpose. Additionally, I will assess the performance of various Multiple Object Tracking (MOT) models to determine which one provides the best results in terms of accuracy and efficiency. Once the most effective MOT model is identified, it will be integrated into the system for further use. Finally, the notebook will also include a section on implementing Traffic Congestion Detection, which will analyze traffic patterns and help in identifying congestion points. This notebook can be applied to a wide range of real-world applications, such as:
+             -> Traffic Flow Optimization
+             -> Monitoring Traffic
+             -> Self-driving Cars
+             -> Smart Parking Systems
+             -> Traffic Law Enforcement
+             -> Accident Detection and Prevention
+
+OBJECT DETECTION -
+It is an area of study in the domain of Computer Vision that focus on identifying and locating objects in an image or videos. The process of locating occurs by finding coordinates of objects and drawing a bounding box around each.In a nutshell , there are two process, first Classification , then Localization. Classification is determination of the type of the Object with specific accuracy(closer to 100% is more accurate) and Localization is finding position of the object.It is important to note that a great bounding box is when it can draw around the object in the best position and overlapping.
+
+SOME POPULAR OBJECT DETECTION MODELS -
+1. YOLO : YOLO stands for Yolo Only Looks Once is a fast and reliable Object detection model which process the image in one pass through the model and it is great for many tasks , especially real-time ones.
+2. R-CNN : Region-based Convolutional Neural Networks which scan different parts of an image and finds objets
+3. SSD : Single Shot MultiBox Detector is another fast and efficient object detection model that can detect multiple objects in a single pass through the network.

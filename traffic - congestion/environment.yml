@@ -1,0 +1,17 @@
+name: smart-traffic
+channels:
+  - conda-forge
+  - defaults
+
+dependencies:
+  - python=3.11
+
+  - fastapi
+  - uvicorn
+
+  - pydantic
+
+  - pip
+  - requests
+
+  - ipykernel
