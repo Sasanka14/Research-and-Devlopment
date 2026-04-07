@@ -251,11 +251,17 @@ You're free to fork, modify, and learn from these projects. If you find them hel
 ### 📊 Repository Stats
 
 ```
-Total Projects:     3
-Languages:          (JavaScript, Python, C, C++, HTML/CSS)
-Live Deployments:   0
-Systems Built:      3
-Total Lines of Code: 50,000+
+Total Projects:        3
+Primary Languages:     Python, JavaScript, HTML, CSS
+Jupyter Notebooks:     8
+Total Lines of Code:   4,381
+  ├─ HTML:            1,443 lines
+  ├─ CSS:             2,010 lines
+  ├─ JavaScript:        746 lines
+  └─ Python:            182 lines
+Live Deployments:      1 (AI Biodiversity Backend)
+Systems Built:         3 (ML Pipeline + Backend + CV)
+Research Notebooks:    8
 ```
 
 ---
