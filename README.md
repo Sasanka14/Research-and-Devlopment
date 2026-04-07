@@ -1,202 +1,223 @@
-# Research and Development
+# Research & Development Portfolio
 
 ![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Research%20%2B%20Engineering-0F766E)
-![Computer Vision](https://img.shields.io/badge/Computer%20Vision-YOLO%20%7C%20MOT-111827)
+![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Research%20%2B%20Systems-0F766E)
 ![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi&logoColor=white)
-![Jupyter](https://img.shields.io/badge/Jupyter-Notebooks-F37626?logo=jupyter&logoColor=white)
+![Computer Vision](https://img.shields.io/badge/Computer%20Vision-YOLO-111827)
 ![GitHub](https://img.shields.io/badge/GitHub-Portfolio-181717?logo=github)
 
-## A research-driven engineering portfolio for real-world AI systems
+## AI, systems, and real-world impact
 
-This repository brings together experiments, prototypes, and applied systems across machine learning, computer vision, backend engineering, and data science. It reflects a practical research mindset: build with intent, evaluate with rigor, and keep the work connected to problems that matter in the real world.
+This repository brings together applied research, machine learning pipelines, backend services, and computer vision experiments. It is structured as a serious engineering and research portfolio: evidence of curiosity, execution, and the discipline required to turn ideas into working systems.
 
-I am an aspiring engineer focused on turning data, models, and APIs into useful systems. The projects here are designed to show not only technical curiosity, but also the ability to structure experiments, reason about model behavior, and translate ideas into working software.
+## 👋 Meet the Developer Behind the Code
+
+Hey! I'm Sasanka 👋 — a computer science student and aspiring software engineer who enjoys building practical, well-structured applications that solve real-world problems.
+
+I work with JavaScript, TypeScript, React, and Next.js, and I'm building strength in full-stack development, data structures, and system thinking, with experience in Python, Java, and AI/ML. This repository is more than just a collection of code—it's a documented journey of learning, experimentation, and growth across multiple programming paradigms.
+
+From crafting responsive web interfaces to architecting low-level systems in C, every project here represents a deliberate step toward becoming a well-rounded engineer who understands the full technology stack.
+
+Outside of coding, I enjoy gaming 🎮, planning new projects 📋, and watching anime 🎌.
+
+---
 
 ## Project Showcase
 
 ### 1. AI Biodiversity Sundarbans
 
 **Short Description**  
-Climate-driven biodiversity simulation for the Sundarbans ecosystem, combining geospatial data, wildlife observations, lag-based feature engineering, and a FastAPI prediction service.
+Climate-aware biodiversity modeling and simulation for the Sundarbans ecosystem, combining geospatial data, lag feature engineering, and a FastAPI backend.
 
 **Tech Stack**  
 Python, pandas, NumPy, GeoPandas, scikit-learn, FastAPI, Pydantic, joblib, Jupyter
 
 **Key Features**
-- Ingests climate, wildlife, and mangrove boundary data.
-- Engineers temporal lag features to capture delayed ecological effects.
-- Serves predictions through a FastAPI `/simulate` endpoint.
-- Computes risk levels from predicted species richness changes.
-- Connects backend logic with a browser-based simulator and documentation pages.
+- Predicts biodiversity response from climate scenarios.
+- Uses lagged temperature and humidity features.
+- Exposes a `/simulate` API for scenario evaluation.
+- Returns baseline, prediction, delta, and risk level.
+- Connects notebook experimentation to a usable service.
 
-**Model**  
-Random Forest-style regression workflow with lagged climate inputs and scenario-based biodiversity forecasting.
+**Model Used**  
+Random Forest regression workflow with temporal feature engineering.
 
-**Demo Video**  
+**Problem Being Solved**  
+Estimating how climate variation can affect species richness in the Sundarbans.
+
+**Outcome / Result**  
+Documented validation suggests strong predictive performance, with the best model reporting R² around 0.85 in the methodology notes.
+
+**🔗 Live Demo**  
+LIVE_LINK_HERE
+
+**🎥 Demo Video**  
 YOUTUBE_LINK_HERE
 
-**Screenshots**  
-SCREENSHOT_PATH
+**📸 Screenshots**  
+./screenshots/ai-biodiversity-sundarbans.png
 
-**Results**  
-R²: 0.85, MAE: 12.3, RMSE: 16.8 for the best documented model in the methodology notes. Replace with the latest validated metrics if the model is retrained.
-
-**Backend Design**
-- `backend/app.py` exposes the main FastAPI application.
-- `backend/schemas.py` validates the 10-feature simulation payload.
-- `backend/model_loader.py` loads the serialized model artifact.
-- `backend/simulator.py` orders inputs, predicts species richness, and maps the delta to a risk level.
-
-**How It Works**
-1. The frontend collects climate parameters and lag values.
-2. The API validates the request with Pydantic.
-3. The backend converts the payload into the model’s feature order.
-4. The model predicts species richness.
-5. The simulator calculates delta from the baseline and returns a risk classification.
-
----
+**Backend / Architecture**  
+The backend is organized around `backend/app.py`, `backend/schemas.py`, `backend/model_loader.py`, and `backend/simulator.py`. The API validates a 10-feature climate payload, loads a persisted model, converts the input into model-ready order, and returns a domain-specific risk assessment.
 
 ### 2. Traffic Congestion System
 
 **Short Description**  
-Computer vision research project for vehicle detection, traffic counting, and congestion analysis using Ultralytics YOLO experiments and custom dataset annotations.
+Computer vision research project for vehicle detection, lane-level counting, and congestion analysis using Ultralytics YOLO experiments.
 
 **Tech Stack**  
-Python, Ultralytics, YOLO, OpenCV, Jupyter, PyTorch, computer vision tooling
+Python, Ultralytics, YOLO, OpenCV, PyTorch, Jupyter
 
 **Key Features**
-- Trains and evaluates YOLO-based vehicle detection models.
-- Works with a custom Roboflow-style image dataset.
-- Explores lane-wise vehicle counting and MOT-assisted traffic analysis.
-- Stores runs, predictions, and training artifacts for iterative experimentation.
+- Trains YOLO-based vehicle detectors.
+- Works with a labeled custom dataset.
+- Explores traffic counting and congestion patterns.
+- Stores training artifacts and model runs for iteration.
 
-**Model**  
-Ultralytics YOLO experiments, including YOLOv8 and YOLOv9 variants, with additional notes on YOLO11 exploration.
+**Model Used**  
+YOLO experiments, including YOLOv8, YOLOv9, and YOLO11 exploration.
 
-**Demo Video**  
+**Problem Being Solved**  
+Detecting and counting vehicles accurately enough to support traffic congestion analysis.
+
+**Outcome / Result**  
+The notebooks show a full training and evaluation workflow with Ultralytics and custom datasets; insert final detection metrics such as mAP, precision, recall, or FPS once you finalize the preferred run.
+
+**🔗 Live Demo**  
+LIVE_LINK_HERE
+
+**🎥 Demo Video**  
 YOUTUBE_LINK_HERE
 
-**Screenshots**  
-SCREENSHOT_PATH
+**📸 Screenshots**  
+./screenshots/traffic-congestion-system.png
 
-**Results**  
-Placeholder: mAP / precision / recall / FPS should be added from the best trained run once you finalize the preferred experiment.
+**Key Implementation Notes**  
+The project uses Ultralytics YOLO models and notebook-driven experimentation to train, inspect, and compare detection performance on a vehicle dataset.
 
-**How It Works**
-- Notebook workflows load a labeled vehicle dataset.
-- A YOLO model is initialized through Ultralytics.
-- The model is trained or fine-tuned on the dataset.
-- Predictions are used for vehicle counting and congestion reasoning.
-- Results and weights are stored under the project assets and run directories.
-
----
-
-### 3. Water Quality Predictions
+### 3. Water Quality Prediction
 
 **Short Description**  
-Machine learning project for predicting water potability from tabular water-quality features, with emphasis on preprocessing, imbalance handling, and model comparison.
+Machine learning classification project that predicts whether water is potable based on tabular water-quality measurements.
 
 **Tech Stack**  
 Python, pandas, NumPy, scikit-learn, XGBoost, Seaborn, Matplotlib, Jupyter
 
 **Key Features**
-- Predicts whether water is potable or unsafe.
-- Handles missing values through preprocessing.
-- Addresses class imbalance with SMOTE.
-- Compares multiple classifiers and inspects feature importance.
-- Provides notebook-based analysis and visualization.
+- Handles missing values and preprocessing.
+- Uses imbalance handling for better classification.
+- Compares multiple models and evaluation metrics.
+- Focuses on interpretability through visualization.
 
-**Model**  
-Random Forest and XGBoost classification workflow with preprocessing, resampling, and evaluation.
+**Model Used**  
+Random Forest and XGBoost classification workflow.
 
-**Demo Video**  
+**Problem Being Solved**  
+Classifying water samples as potable or non-potable from measured chemical properties.
+
+**Outcome / Result**  
+The notebook explores preprocessing, model comparison, and feature importance analysis; add the final accuracy, F1-score, or ROC-AUC once you lock the latest results.
+
+**🔗 Live Demo**  
+LIVE_LINK_HERE
+
+**🎥 Demo Video**  
 YOUTUBE_LINK_HERE
 
-**Screenshots**  
-SCREENSHOT_PATH
+**📸 Screenshots**  
+./screenshots/water-quality-prediction.png
 
-**Results**  
-Placeholder: add final accuracy, F1-score, ROC-AUC, or cross-validation scores here.
+**Key Implementation Notes**  
+This project emphasizes data cleaning, imbalance management, and supervised classification on a real-world tabular dataset.
 
-**How It Works**
-1. The dataset is loaded and cleaned.
-2. Missing values are imputed and imbalance is corrected.
-3. Models are trained and compared.
-4. Performance metrics and feature importance are reviewed.
-5. The notebook records the best-performing configuration.
+### 4. Backend Services
+
+**Short Description**  
+Python backend modules for model loading, schema validation, and simulation logic, designed as a clean API layer for ML-driven workflows.
+
+**Tech Stack**  
+Python, FastAPI, Pydantic, pandas, scikit-learn, joblib, CORS middleware
+
+**Key Features**
+- FastAPI-based service design.
+- Strict request and response schemas.
+- Model loading from serialized artifacts.
+- Simulation logic that transforms predictions into decision-friendly outputs.
+
+**Architecture / Engineering Notes**  
+The backend is split into modules for the API entry point, schema validation, model loading, and simulation logic. This separation keeps the service maintainable and makes the ML pipeline easier to extend.
+
+**How It Works**  
+Requests enter the API as structured JSON, are validated by Pydantic, transformed into model-ready data, passed through the ML model, and returned as a clean response that supports downstream interfaces.
+
+**🔗 Live Demo**  
+LIVE_LINK_HERE
+
+**🎥 Demo Video**  
+YOUTUBE_LINK_HERE
+
+**📸 Screenshots**  
+./screenshots/backend-services.png
 
 ---
 
-### 4. Backend APIs
+## Architecture / Engineering Depth
 
-**Short Description**  
-Python backend architecture for climate simulation and AI-assisted predictions, built to demonstrate API design, schema validation, model loading, and service-oriented thinking.
+This repository covers the practical layers of modern applied engineering:
 
-**Tech Stack**  
-Python, FastAPI, Pydantic, joblib, pandas, scikit-learn, CORS middleware
+- Machine learning pipelines that move from preprocessing to evaluation to model persistence.
+- Backend API systems that make predictions accessible through clean interfaces.
+- Computer vision models built with YOLO for detection and counting tasks.
+- Data preprocessing and model evaluation across both tabular and geospatial workflows.
 
-**Key Features**
-- Clean REST API design with health and simulation endpoints.
-- Input validation through typed schemas.
-- Model loading from a persisted artifact.
-- Feature ordering and request-to-model transformation.
-- Risk scoring logic for interpretability.
-
-**System Design**
-- `models` stores serialized ML artifacts.
-- `schemas` defines request and response contracts.
-- `simulator` converts model outputs into domain-specific interpretation.
-- `app.py` acts as the API entry point and CORS-enabled service layer.
-
-**How It Works**
-- A request enters the API as structured JSON.
-- Pydantic validates the feature values.
-- The backend builds a model-ready dataframe.
-- The trained model produces a prediction.
-- The service returns a clean JSON response with baseline, prediction, delta, and risk level.
-
-**Demo Video**  
-YOUTUBE_LINK_HERE
-
-**Screenshots**  
-SCREENSHOT_PATH
-
-**Results**  
-Placeholder: add endpoint latency, response example, or integration screenshot if available.
+It is not a random notebook dump. It is a structured body of work that shows how data, models, and systems can be stitched together into useful software.
 
 ## Tech Stack Overview
 
 **Languages**  
-Python, SQL-style tabular analysis, notebook-based experimentation
+Python, C++, JavaScript
 
-**ML / AI**  
-scikit-learn, XGBoost, YOLO, Random Forest, regression, classification, feature engineering
+**ML/AI**  
+Scikit-learn, XGBoost, YOLO
+
+**Frontend**  
+React, Next.js
 
 **Backend**  
-FastAPI, Pydantic, CORS middleware, JSON APIs, joblib model loading
-
-**Data / CV / Analysis**  
-pandas, NumPy, GeoPandas, Matplotlib, Seaborn, OpenCV, Ultralytics
+FastAPI
 
 **Tools**  
-Git, GitHub, Jupyter, notebooks, dataset annotation workflows
+Git, VS Code
 
-## Engineering Depth
+## Skills Demonstrated
 
-This repository demonstrates more than isolated notebooks. It shows the shape of an engineer who can work across the full problem stack:
+- Problem solving
+- ML model building
+- Data handling
+- Backend development
+- System thinking
 
-- Real-world problem solving with ecological, environmental, and infrastructure use cases.
-- Machine learning pipelines that move from data cleaning to validation to model persistence.
-- Computer vision systems built around object detection and traffic understanding.
-- Backend architecture that turns models into accessible services.
-- Documentation discipline that makes the work easier to inspect, reuse, and extend.
+## Dataset & Models
 
-## How To Run
+Large datasets and serialized models are not included in this repository.
 
-The projects are organized as separate workspaces, so install dependencies and run them from the relevant project directory.
+External resources and downloadable artifacts can be linked here:
 
-### 1. Install dependencies
+- DATASET_LINK_HERE
+- MODEL_DOWNLOAD_LINK_HERE
+
+## How to Run
+
+### 1. Clone the repository
+
+```bash
+git clone <YOUR_REPOSITORY_URL>
+cd Research
+```
+
+### 2. Install requirements
+
+Install the dependencies inside each project folder as needed.
 
 ```bash
 cd ai_biodiversity_sundarbans
@@ -205,46 +226,41 @@ pip install -r requirements.txt
 cd ../Water_Quality_Predictions
 pip install -r requirements.txt
 
-cd "../traffic - congestion"
+cd ../traffic - congestion
 pip install -r requirement.txt
 ```
 
-### 2. Run the biodiversity backend
+### 3. Run the backend
 
 ```bash
 cd ai_biodiversity_sundarbans
 uvicorn backend.app:app --reload --port 3005
 ```
 
-If your local entry point is the package-style app instead, use the FastAPI module that exposes the same service contract.
-
-### 3. Run the notebooks
+### 4. Run the notebooks
 
 ```bash
 cd ai_biodiversity_sundarbans/notebooks
 jupyter notebook
 ```
 
-For the other projects, open the relevant notebook folder and launch Jupyter from there.
+Repeat the notebook launch inside the project you want to explore.
 
 ## Future Improvements
 
-- Model optimization through more robust tuning, validation, and error analysis.
-- Deployment of selected projects as APIs or cloud-hosted services.
-- UI integration for richer dashboards, demos, and decision support.
-- Automated evaluation scripts for reproducible experiment tracking.
-- Stronger packaging of notebooks into reusable modules.
+- Scale models with stronger validation and tuning.
+- Deploy APIs to cloud or container platforms.
+- Improve UI with more polished dashboards and demos.
+- Add real-time systems for streaming or live inference.
 
 ## Contribution
 
-Contributions are welcome. A simple workflow is enough:
-
 1. Fork the repository.
 2. Create a feature branch.
-3. Make a focused improvement.
-4. Test the change in the relevant project folder.
-5. Open a pull request with a clear summary of what changed and why.
+3. Make a focused change.
+4. Test your update in the relevant project folder.
+5. Open a pull request with a clear summary of the work.
 
 ## Closing Statement
 
-This repository is a record of steady technical growth: from experiments to systems, from prediction to interpretation, from data to usable software. The goal is not just to build models, but to build tools that are reliable, understandable, and worth using. That is the kind of engineering mindset that turns research into impact.
+This repository represents growth through discipline, repetition, and deliberate experimentation. The long-term goal is simple: keep building systems that are technically sound, research-aware, and genuinely useful. That is how engineering becomes credibility, and how credibility becomes impact.
