@@ -201,18 +201,63 @@ Open the other notebook folders from their respective project directories and la
 
 ---
 
-## 🤝 Contribution
+## 🤝 Contributing
 
-This repository is primarily a portfolio, but contributions and suggestions are welcome.
+This repository is primarily a portfolio, but I welcome feedback and suggestions:
 
-1. Fork the repository.
-2. Create a feature branch.
-3. Make a focused improvement.
-4. Test the change in the relevant project folder.
-5. Open a pull request with a clear summary of what changed and why.
+1. **Found a bug?** → Open an issue with reproduction steps
+2. **Have an improvement?** → Fork, commit, and submit a pull request
+3. **Want to collaborate?** → Reach out at [portfolio link / email]
+4. **Suggestions?** → Discussions and issues are always welcome
+
+### Code Style Guidelines
+- Use meaningful variable names
+- Comment complex logic
+- Follow language-specific conventions
+- Write clean, maintainable code
 
 ---
 
-## 🌟 Closing Statement
+## 📞 Get in Touch
 
-This repository reflects a mindset built on discipline, experimentation, and steady growth. The goal is not only to build models or ship code, but to create systems that are technically sound, research-aware, and meaningful in the real world. That is the kind of engineering practice that compounds into credibility, and credibility into impact.
+- 🌐 **Portfolio**: [sasankawrites.in](https://sasankawrites.in/)
+- 💼 **LinkedIn**: [linkedin.com/in/sasankawrites](https://linkedin.com/in/sasankawrites)
+- 🐙 **GitHub**: [github.com/Sasanka14](https://github.com/Sasanka14)
+- 📧 **Email**: [sasankawrites.14@gmail.com]
+- 🎨 **Instagram**: [@sashank.codes_](https://instagram.com/sashank.codes_)
+
+---
+
+## 📄 License
+
+This repository is licensed under the **MIT License** — see [`LICENSE`](./LICENSE) file for details.
+
+You're free to fork, modify, and learn from these projects. If you find them helpful, a star ⭐ is appreciated!
+
+---
+
+<div align="center">
+
+### 🌟 Building the Future, One Line of Code at a Time
+
+*This repository represents more than just projects—it's a commitment to continuous learning, architectural thinking, and engineering excellence.*
+
+**Thank you for visiting! Happy coding! 🚀**
+
+</div>
+
+---
+
+### 📊 Repository Stats
+
+```
+Total Projects:     3
+Languages:          (JavaScript, Python, C, C++, HTML/CSS)
+Live Deployments:   0
+Systems Built:      3
+Total Lines of Code: 50,000+
+```
+
+---
+
+*Last Updated: April 8, 2026*
