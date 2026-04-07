@@ -223,7 +223,7 @@ This repository is primarily a portfolio, but I welcome feedback and suggestions
 - 🌐 **Portfolio**: [sasankawrites.in](https://sasankawrites.in/)
 - 💼 **LinkedIn**: [linkedin.com/in/sasankawrites](https://linkedin.com/in/sasankawrites)
 - 🐙 **GitHub**: [github.com/Sasanka14](https://github.com/Sasanka14)
-- 📧 **Email**: [sasankawrites.14@gmail.com]
+- 📧 **Email**: [sasankawrites.14@gmail.com](mailto:sasankawrites.14@gmail.com)
 - 🎨 **Instagram**: [@sashank.codes_](https://instagram.com/sashank.codes_)
 
 ---
