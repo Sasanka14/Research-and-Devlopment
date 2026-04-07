@@ -10,6 +10,15 @@
 
 This repository brings together applied research, machine learning pipelines, backend services, and computer vision experiments. It is structured as a serious engineering and research portfolio: evidence of curiosity, execution, and the discipline required to turn ideas into working systems.
 
+## What’s Inside
+
+| Area | Focus |
+|------|-------|
+| AI Biodiversity Sundarbans | Climate-aware biodiversity modeling and backend simulation |
+| Traffic Congestion System | YOLO-based vehicle detection and traffic analysis |
+| Water Quality Prediction | Tabular ML classification and evaluation |
+| Backend Services | FastAPI modules for model serving and simulation |
+
 ## 👋 Meet the Developer Behind the Code
 
 Hey! I'm Sasanka 👋 — a computer science student and aspiring software engineer who enjoys building practical, well-structured applications that solve real-world problems.
@@ -21,6 +30,15 @@ From crafting responsive web interfaces to architecting low-level systems in C, 
 Outside of coding, I enjoy gaming 🎮, planning new projects 📋, and watching anime 🎌.
 
 ---
+
+## Repository Snapshot
+
+| Project | Core Problem | Primary Output |
+|--------|-------------|----------------|
+| AI Biodiversity Sundarbans | Predict biodiversity response under climate variation | Risk-aware biodiversity simulation |
+| Traffic Congestion System | Detect vehicles and analyze congestion | YOLO detections and counting workflows |
+| Water Quality Prediction | Classify water as potable or non-potable | ML classification notebook and results |
+| Backend Services | Serve ML outputs through a clean API | Validation, prediction, and simulation endpoints |
 
 ## Project Showcase
 
@@ -48,17 +66,17 @@ Estimating how climate variation can affect species richness in the Sundarbans.
 **Outcome / Result**  
 Documented validation suggests strong predictive performance, with the best model reporting R² around 0.85 in the methodology notes.
 
-**🔗 Live Demo**  
-LIVE_LINK_HERE
-
-**🎥 Demo Video**  
-YOUTUBE_LINK_HERE
-
-**📸 Screenshots**  
-./screenshots/ai-biodiversity-sundarbans.png
+| Link Type | Reference |
+|----------|-----------|
+| 🔗 Live Demo | LIVE_LINK_HERE |
+| 🎥 Demo Video | YOUTUBE_LINK_HERE |
+| 📸 Screenshots | ./screenshots/ai-biodiversity-sundarbans.png |
 
 **Backend / Architecture**  
-The backend is organized around `backend/app.py`, `backend/schemas.py`, `backend/model_loader.py`, and `backend/simulator.py`. The API validates a 10-feature climate payload, loads a persisted model, converts the input into model-ready order, and returns a domain-specific risk assessment.
+The backend is organized around backend/app.py, backend/schemas.py, backend/model_loader.py, and backend/simulator.py. The API validates a 10-feature climate payload, loads a persisted model, converts the input into model-ready order, and returns a domain-specific risk assessment.
+
+**Project Notes**  
+This project blends geospatial data, time-lagged feature engineering, and service design into a single climate-response workflow.
 
 ### 2. Traffic Congestion System
 
@@ -83,17 +101,17 @@ Detecting and counting vehicles accurately enough to support traffic congestion 
 **Outcome / Result**  
 The notebooks show a full training and evaluation workflow with Ultralytics and custom datasets; insert final detection metrics such as mAP, precision, recall, or FPS once you finalize the preferred run.
 
-**🔗 Live Demo**  
-LIVE_LINK_HERE
-
-**🎥 Demo Video**  
-YOUTUBE_LINK_HERE
-
-**📸 Screenshots**  
-./screenshots/traffic-congestion-system.png
+| Link Type | Reference |
+|----------|-----------|
+| 🔗 Live Demo | LIVE_LINK_HERE |
+| 🎥 Demo Video | YOUTUBE_LINK_HERE |
+| 📸 Screenshots | ./screenshots/traffic-congestion-system.png |
 
 **Key Implementation Notes**  
 The project uses Ultralytics YOLO models and notebook-driven experimentation to train, inspect, and compare detection performance on a vehicle dataset.
+
+**Project Notes**  
+This work is centered on object detection, class counting, and iterative model selection for traffic analysis.
 
 ### 3. Water Quality Prediction
 
@@ -118,17 +136,17 @@ Classifying water samples as potable or non-potable from measured chemical prope
 **Outcome / Result**  
 The notebook explores preprocessing, model comparison, and feature importance analysis; add the final accuracy, F1-score, or ROC-AUC once you lock the latest results.
 
-**🔗 Live Demo**  
-LIVE_LINK_HERE
-
-**🎥 Demo Video**  
-YOUTUBE_LINK_HERE
-
-**📸 Screenshots**  
-./screenshots/water-quality-prediction.png
+| Link Type | Reference |
+|----------|-----------|
+| 🔗 Live Demo | LIVE_LINK_HERE |
+| 🎥 Demo Video | YOUTUBE_LINK_HERE |
+| 📸 Screenshots | ./screenshots/water-quality-prediction.png |
 
 **Key Implementation Notes**  
 This project emphasizes data cleaning, imbalance management, and supervised classification on a real-world tabular dataset.
+
+**Project Notes**  
+The core value here is disciplined preprocessing and model comparison on a noisy, practical classification problem.
 
 ### 4. Backend Services
 
@@ -150,14 +168,14 @@ The backend is split into modules for the API entry point, schema validation, mo
 **How It Works**  
 Requests enter the API as structured JSON, are validated by Pydantic, transformed into model-ready data, passed through the ML model, and returned as a clean response that supports downstream interfaces.
 
-**🔗 Live Demo**  
-LIVE_LINK_HERE
+| Link Type | Reference |
+|----------|-----------|
+| 🔗 Live Demo | LIVE_LINK_HERE |
+| 🎥 Demo Video | YOUTUBE_LINK_HERE |
+| 📸 Screenshots | ./screenshots/backend-services.png |
 
-**🎥 Demo Video**  
-YOUTUBE_LINK_HERE
-
-**📸 Screenshots**  
-./screenshots/backend-services.png
+**Project Notes**  
+This module set demonstrates a clean boundary between API delivery, model loading, and simulation logic.
 
 ---
 
@@ -165,29 +183,24 @@ YOUTUBE_LINK_HERE
 
 This repository covers the practical layers of modern applied engineering:
 
-- Machine learning pipelines that move from preprocessing to evaluation to model persistence.
-- Backend API systems that make predictions accessible through clean interfaces.
-- Computer vision models built with YOLO for detection and counting tasks.
-- Data preprocessing and model evaluation across both tabular and geospatial workflows.
+| Capability | Evidence |
+|------------|----------|
+| Machine learning pipelines | Notebook-based data preparation, training, and evaluation |
+| Backend API systems | FastAPI service design with typed schemas |
+| Computer vision models | YOLO detection and traffic counting experiments |
+| Data preprocessing and model evaluation | Tabular, geospatial, and climate-aware workflows |
 
 It is not a random notebook dump. It is a structured body of work that shows how data, models, and systems can be stitched together into useful software.
 
 ## Tech Stack Overview
 
-**Languages**  
-Python, C++, JavaScript
-
-**ML/AI**  
-Scikit-learn, XGBoost, YOLO
-
-**Frontend**  
-React, Next.js
-
-**Backend**  
-FastAPI
-
-**Tools**  
-Git, VS Code
+| Category | Tools |
+|----------|-------|
+| Languages | Python, C++, JavaScript |
+| ML/AI | Scikit-learn, XGBoost, YOLO |
+| Frontend | React, Next.js |
+| Backend | FastAPI |
+| Tools | Git, VS Code |
 
 ## Skills Demonstrated
 
