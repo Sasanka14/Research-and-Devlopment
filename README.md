@@ -1,11 +1,3 @@
-# Research & Development Portfolio
-
-![Python](https://img.shields.io/badge/Python-3.11+-3776AB?logo=python&logoColor=white)
-![Machine Learning](https://img.shields.io/badge/Machine%20Learning-Research%20%2B%20Systems-0F766E)
-![FastAPI](https://img.shields.io/badge/FastAPI-Backend-009688?logo=fastapi&logoColor=white)
-![Computer Vision](https://img.shields.io/badge/Computer%20Vision-YOLO-111827)
-![GitHub](https://img.shields.io/badge/GitHub-Portfolio-181717?logo=github)
-
 ## 🚀 Research & Development Portfolio
 
 <div align="center">
